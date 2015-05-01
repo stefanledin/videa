@@ -1,0 +1,63 @@
+/**
+ * Variables
+ */
+/**
+ * Globals
+ */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Header
+ */
+header[role="banner"] {
+  background: #404040;
+  overflow: hidden; }
+  header[role="banner"] .videa-logo {
+    margin: 0.625em auto;
+    display: block;
+    max-width: 100px; }
+  header[role="banner"] .menu {
+    margin: 0 0 0.625em;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; }
+    header[role="banner"] .menu li {
+      /*margin-right: 2.188em;*/
+      margin-right: 1.188em;
+      display: inline; }
+      header[role="banner"] .menu li:last-child {
+        margin-right: 0; }
+    header[role="banner"] .menu a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 0.750em; }
+
+/**
+ * Footer
+ */
+footer[role="contentinfo"] {
+  padding: 2.18em 0;
+  /*margin: 4.375em auto;*/
+  background: #404040;
+  overflow: hidden; }
+  footer[role="contentinfo"] .contact-info {
+    /*margin-top: 1.875em;*/
+    margin-top: .675em;
+    text-align: center;
+    color: white; }
+  footer[role="contentinfo"] a {
+    color: white; }
+
+.videa-logo-footer {
+  display: block;
+  max-width: 29px; }
+
+/**
+ * Helpers
+ */
+.center-block {
+  display: block;
+  margin: 0 auto; }

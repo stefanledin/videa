@@ -1,0 +1,77 @@
+/**
+ * Variables
+ */
+$grey: #404040;
+
+/**
+ * Globals
+ */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * Header
+ */
+header[role="banner"] {
+	background: $grey;
+	overflow: hidden;
+	.videa-logo {
+		margin: 0.625em auto;
+		display: block;
+		max-width: 100px;
+	}
+	.menu {
+		margin: 0 0 0.625em;
+		padding: 0;
+		overflow: hidden;
+		text-align: center;
+		li {
+			/*margin-right: 2.188em;*/
+			margin-right: 1.188em;
+			display: inline;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.750em;
+		}
+	}
+}
+
+/**
+ * Footer
+ */
+footer[role="contentinfo"] {
+	padding: 2.18em 0;
+	/*margin: 4.375em auto;*/
+	background: $grey;	
+	overflow: hidden;
+	.contact-info {
+		/*margin-top: 1.875em;*/
+		margin-top: .675em;
+		text-align: center;
+		color: white;
+	}
+	a {
+		color: white;
+	}
+}
+.videa-logo-footer {
+	display: block;
+	max-width: 29px;
+}
+
+
+/**
+ * Helpers
+ */
+.center-block {
+	display: block;
+	margin: 0 auto;
+}

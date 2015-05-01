@@ -6,6 +6,7 @@
  * 2. Enqueue scripts and styles
  * 3. Images
  * 4. Filters
+ * 5. Menus
  */
 require 'includes/custom-post-types.php';
 
@@ -16,6 +17,7 @@ require 'includes/images/custom-image-sizes.php';
 
 require 'includes/filters.php';
 
+require 'includes/menus.php';
 
 if ( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
