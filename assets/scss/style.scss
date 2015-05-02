@@ -2,19 +2,53 @@
  * Variables
  */
 $grey: #404040;
+$text-grey: #3f3f3f;
 
 /**
  * Globals
  */
+body {
+	color: $text-grey;
+}
+h2 {
+	margin: 0 0 .4em;
+}
+h3 {
+	margin-top: 0;
+	font-size: 1.125em;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+p {
+	margin: 0 0 .75em;
+}
+a {
+	color: $text-grey;
+	text-decoration: none;
+}
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
+}
+
+/**
+ * Layout
+ */
+.site-width {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.site-width-inner {
+	padding: 0 10px;
 }
 
 /**
  * Header
  */
 header[role="banner"] {
+	margin-bottom: 2.5%;
 	background: $grey;
 	overflow: hidden;
 	.videa-logo {
@@ -45,9 +79,57 @@ header[role="banner"] {
 }
 
 /**
+ * Startsida
+ */
+.our-areas {
+	h2 {
+		/*font-size: 2.250em;*/
+		font-size: 1.8em;
+		font-family: Georgia, serif;
+		font-style: italic;
+		line-height: 1;
+		color: $text-grey;
+	}
+	a {
+		font-size: 0.625em;
+		text-transform: uppercase;
+	}
+	.area {
+		margin-bottom: 2em;
+	}
+}
+.case-list-li {
+	margin-bottom: 5%;
+	position: relative;
+	text-align: center;
+	a {
+		color: white;
+	}
+}
+.case-list-title-overlay {
+	opacity: 0;
+	background: rgba(0,0,0, .5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition-property: opacity;
+	transition-duration: .3s;
+	&:hover {
+		opacity: 1;
+	}
+	h2 {
+		margin-bottom: .2em;
+		font-family: Georgia, serif;
+		font-style: italic;
+		line-height: 1;
+	}
+}
+
+/**
  * Footer
  */
 footer[role="contentinfo"] {
+	margin-top: 3.875em;
 	padding: 2.18em 0;
 	/*margin: 4.375em auto;*/
 	background: $grey;	
@@ -75,3 +157,15 @@ footer[role="contentinfo"] {
 	display: block;
 	margin: 0 auto;
 }
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+
+@import "mq";

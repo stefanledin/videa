@@ -1,0 +1,34 @@
+@media (min-width: 568px) {
+
+	/**
+	 * Startsida
+	 */
+	.case-list-ul {
+		margin-left: -1.25%;
+	}
+	.case-list-li {
+		margin: 0 0 1.25% 1.25%;
+		width: 48.75%;
+		float: left;
+	}
+
+}
+
+@media (min-width: 650px) {
+
+	/**
+	 * Startsida
+	 */
+	.our-areas {
+		margin-left: -2.25%;
+		h2 {
+			font-size: 1.5em;
+		}
+		.area {
+			margin-left: 2.25%;
+			width: 31.05%;
+			float: left;
+		}
+	}
+
+}
