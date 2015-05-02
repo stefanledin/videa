@@ -15,7 +15,8 @@
 			<div class="contact-list clearfix">
 				<?php 
 				$employees = get_posts( array(
-					'post_type' => 'medarbetare'
+					'post_type' => 'medarbetare',
+					'orderby' => 'menu_order'
 				) );
 				foreach ( $employees as $post ) : setup_postdata( $post );
 				?>
