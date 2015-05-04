@@ -10,6 +10,8 @@ function enqueue_scripts_and_styles () {
 	
 	// wp_enqueue_scripts($handle, $src, $deps, $ver, $in_footer);
 	wp_deregister_script( 'jquery' );
-	#wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
+	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
+	wp_enqueue_script( 'fitvids', $assetsDir.'/js/jquery.fitvids.js', array('jquery'), null, true );
+	wp_enqueue_script( 'script', $assetsDir.'/js/script.js', array('fitvids'), filemtime($assetsPath.'/js/script.js'), true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_and_styles' );

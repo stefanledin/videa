@@ -17,6 +17,11 @@ h3 {
   text-transform: uppercase;
   text-align: center; }
 
+.serif {
+  font-family: Georgia, serif;
+  font-style: italic;
+  line-height: 1; }
+
 p {
   margin: 0 0 .75em; }
 
@@ -27,6 +32,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block; }
+
+iframe {
+  margin: 0 auto;
   display: block; }
 
 /**
@@ -42,6 +51,13 @@ img {
 
 .site-width-inner {
   padding: 0 10px; }
+
+.home-link {
+  margin-top: 2em;
+  font-size: .750em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block; }
 
 /**
  * Header
@@ -75,10 +91,10 @@ header[role="banner"] {
  * Startsida
  */
 .our-areas h2 {
-  font-size: 1.8em;
   font-family: Georgia, serif;
   font-style: italic;
   line-height: 1;
+  font-size: 1.8em;
   color: #3f3f3f; }
 .our-areas a {
   font-size: 0.625em;
@@ -104,10 +120,10 @@ header[role="banner"] {
   .case-list-title-overlay:hover {
     opacity: 1; }
   .case-list-title-overlay h2 {
-    margin-bottom: .2em;
     font-family: Georgia, serif;
     font-style: italic;
-    line-height: 1; }
+    line-height: 1;
+    margin-bottom: .2em; }
 
 /**
  * Om oss
@@ -129,6 +145,17 @@ header[role="banner"] {
     margin: 0 auto .5em auto; }
   .contact-card .contact-card-name {
     text-transform: uppercase; }
+
+/**
+ * Case
+ */
+.case-title {
+  margin-bottom: .2em;
+  text-align: center; }
+
+.case-short-description {
+  text-align: center;
+  display: block; }
 
 /**
  * Footer

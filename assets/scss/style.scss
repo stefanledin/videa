@@ -20,6 +20,14 @@ h3 {
 	text-transform: uppercase;
 	text-align: center;
 }
+@mixin serif {
+	font-family: Georgia, serif;
+	font-style: italic;
+	line-height: 1;
+}
+.serif {
+	@include serif;
+}
 p {
 	margin: 0 0 .75em;
 }
@@ -30,6 +38,10 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
+}
+iframe {
+	margin: 0 auto;
 	display: block;
 }
 
@@ -48,6 +60,14 @@ img {
 }
 .site-width-inner {
 	padding: 0 10px;
+}
+
+.home-link {
+	margin-top: 2em;
+	font-size: .750em;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
 }
 
 /**
@@ -89,10 +109,8 @@ header[role="banner"] {
  */
 .our-areas {
 	h2 {
+		@include serif;
 		font-size: 1.8em;
-		font-family: Georgia, serif;
-		font-style: italic;
-		line-height: 1;
 		color: $text-grey;
 	}
 	a {
@@ -123,10 +141,8 @@ header[role="banner"] {
 		opacity: 1;
 	}
 	h2 {
+		@include serif;
 		margin-bottom: .2em;
-		font-family: Georgia, serif;
-		font-style: italic;
-		line-height: 1;
 	}
 }
 
@@ -153,6 +169,18 @@ header[role="banner"] {
 	.contact-card-name {
 		text-transform: uppercase;
 	}
+}
+
+/**
+ * Case
+ */
+.case-title {
+	margin-bottom: .2em;
+	text-align: center;
+}
+.case-short-description {
+	text-align: center;
+	display: block;
 }
 
 /**

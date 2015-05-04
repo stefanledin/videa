@@ -15,7 +15,9 @@
 
 		<header role="banner">
 			<div class="site-width">
-				<img src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png" class="videa-logo">
+				<a href="<?php echo home_url();?>">
+					<img src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png" class="videa-logo">
+				</a>
 				<?php
 				wp_nav_menu( array( 
 					'menu' => 'mainmenu',
