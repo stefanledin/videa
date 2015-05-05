@@ -1,7 +1,18 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Startsida
+ */
+get_header(); ?>
 
 		<section class="site-width">
 			<div class="site-width-inner clearfix">
+				<div class="showreel">
+					<div class="js-video-container">
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<?php the_content(); ?>
+						<?php endwhile; endif; ?>
+					</div>
+				</div>
 				<div class="our-areas">
 					<?php for ( $i = 1; $i <= 3; $i++ ) : ?>
 						<div class="area">
