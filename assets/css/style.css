@@ -22,6 +22,9 @@ h3 {
   font-style: italic;
   line-height: 1; }
 
+.title {
+  text-align: center; }
+
 p {
   margin: 0 0 .75em; }
 
@@ -156,6 +159,12 @@ header[role="banner"] {
 .case-short-description {
   text-align: center;
   display: block; }
+
+/**
+ * Page
+ */
+.page article {
+  font-size: 1.125em; }
 
 /**
  * Footer
