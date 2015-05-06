@@ -120,6 +120,9 @@ header[role="banner"] {
 		font-size: 0.625em;
 		text-transform: uppercase;
 	}
+	p {
+		font-size: 0.875em;
+	}
 	.area {
 		margin-bottom: 2em;
 	}
@@ -184,6 +187,23 @@ header[role="banner"] {
 .case-short-description {
 	text-align: center;
 	display: block;
+}
+
+/**
+ * Instagram
+ */
+.instagram-list {
+	margin: 0 0 0 -1.5%;
+	padding: 0;
+}
+.instagram-list-item {
+	margin: 0 0 5% 1.5%;
+	width: 48.5%;
+	float: left;
+	list-style: none;
+	img {
+		margin: 0 auto;
+	}
 }
 
 /**

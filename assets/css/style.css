@@ -102,6 +102,8 @@ header[role="banner"] {
 .our-areas a {
   font-size: 0.625em;
   text-transform: uppercase; }
+.our-areas p {
+  font-size: 0.875em; }
 .our-areas .area {
   margin-bottom: 2em; }
 
@@ -159,6 +161,21 @@ header[role="banner"] {
 .case-short-description {
   text-align: center;
   display: block; }
+
+/**
+ * Instagram
+ */
+.instagram-list {
+  margin: 0 0 0 -1.5%;
+  padding: 0; }
+
+.instagram-list-item {
+  margin: 0 0 5% 1.5%;
+  width: 48.5%;
+  float: left;
+  list-style: none; }
+  .instagram-list-item img {
+    margin: 0 auto; }
 
 /**
  * Page
@@ -258,12 +275,23 @@ footer[role="contentinfo"] {
     margin-top: 3.1250em; }
 
   .contact-card {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  /**
+   * Instagram
+   */
+  .instagram-list {
+    margin-left: -2.25%; }
+
+  .instagram-list-item {
+    margin-left: 2.25%;
+    width: 31.05%; } }
 @media (min-width: 1000px) {
   /**
    * Header
    */
   header[role="banner"] {
+    margin-bottom: 5%;
     height: 5em; }
     header[role="banner"] .videa-logo {
       margin: 1em 0 0 0; }
@@ -273,14 +301,28 @@ footer[role="contentinfo"] {
   /**
    * Startsida
    */
+  .home header[role="banner"] {
+    margin-bottom: 10%; }
+
+  .showreel {
+    margin-bottom: 10%; }
+
   .our-areas h2 {
     font-size: 2.125em; }
+  .our-areas p {
+    font-size: 1em; }
 
   /**
    * Om oss
    */
   .contact-list {
     margin-top: 6.250em; }
+
+  /**
+   * Instagram
+   */
+  .instagram-list-item {
+    width: 17.75%; }
 
   /**
    * Footer

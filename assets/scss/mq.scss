@@ -68,6 +68,17 @@
 		font-size: 1em;
 	}
 
+	/**
+	 * Instagram
+	 */
+	.instagram-list {
+		margin-left: -2.25%;
+	}
+	.instagram-list-item {
+		margin-left: 2.25%;
+		width: 31.05%;
+	}
+
 }
 
 @media (min-width: 1000px) {
@@ -76,6 +87,7 @@
 	 * Header
 	 */
 	header[role="banner"] {
+		margin-bottom: 5%;
 		height: 5em;
 		.videa-logo {
 			margin: 1em 0 0 0;
@@ -88,8 +100,19 @@
 	/**
 	 * Startsida
 	 */
-	.our-areas h2 {
-		font-size: 2.125em;
+	.home header[role="banner"] {
+		margin-bottom: 10%;
+	}
+	.showreel {
+		margin-bottom: 10%;
+	}
+	.our-areas {
+		h2 {
+			font-size: 2.125em;
+		}
+		p {
+			font-size: 1em;
+		}
 	}
 
 	/**
@@ -97,6 +120,16 @@
 	 */
 	.contact-list {
 		margin-top: 6.250em;
+	}
+
+	/**
+	 * Instagram
+	 */
+	.instagram-list {
+
+	}
+	.instagram-list-item {
+		width: 17.75%;
 	}
 
 	/**

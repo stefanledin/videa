@@ -19,6 +19,8 @@ require 'includes/filters.php';
 
 require 'includes/menus.php';
 
+require 'includes/Instagetter.php';
+
 if ( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
