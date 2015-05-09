@@ -31,6 +31,9 @@ h3 {
 .title {
 	text-align: center;
 }
+.section-title {
+	margin-bottom: 1.25em;
+}
 p {
 	margin: 0 0 .75em;
 }
@@ -113,8 +116,8 @@ header[role="banner"] {
 .our-areas {
 	h2 {
 		@include serif;
-		font-size: 1.8em;
 		color: $text-grey;
+		font-size: 1.8rem;
 	}
 	a {
 		font-size: 0.625em;

@@ -25,6 +25,9 @@ h3 {
 .title {
   text-align: center; }
 
+.section-title {
+  margin-bottom: 1.25em; }
+
 p {
   margin: 0 0 .75em; }
 
@@ -97,8 +100,8 @@ header[role="banner"] {
   font-family: Georgia, serif;
   font-style: italic;
   line-height: 1;
-  font-size: 1.8em;
-  color: #3f3f3f; }
+  color: #3f3f3f;
+  font-size: 1.8rem; }
 .our-areas a {
   font-size: 0.625em;
   text-transform: uppercase; }
@@ -232,6 +235,7 @@ footer[role="contentinfo"] {
       margin: .5em 0 0 0;
       float: left; }
     header[role="banner"] .menu {
+      margin: 0;
       line-height: 3.125em;
       text-align: right; }
 
@@ -287,11 +291,14 @@ footer[role="contentinfo"] {
     margin-left: 2.25%;
     width: 31.05%; } }
 @media (min-width: 1000px) {
+  .section-title {
+    margin-bottom: 2.5em; }
+
   /**
    * Header
    */
   header[role="banner"] {
-    margin-bottom: 5%;
+    margin-bottom: 3.125em;
     height: 5em; }
     header[role="banner"] .videa-logo {
       margin: 1em 0 0 0; }
@@ -302,7 +309,7 @@ footer[role="contentinfo"] {
    * Startsida
    */
   .home header[role="banner"] {
-    margin-bottom: 10%; }
+    margin-bottom: 6.250em; }
 
   .showreel {
     margin-bottom: 10%; }
