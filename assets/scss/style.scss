@@ -191,6 +191,15 @@ header[role="banner"] {
 	text-align: center;
 	display: block;
 }
+.not-loaded {
+	display: none;
+}
+.js-case-load-more {
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
 
 /**
  * Instagram

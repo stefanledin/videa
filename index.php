@@ -34,7 +34,7 @@ get_header(); ?>
 				for ( $i = 0; $i <= 9; $i++ ) :
 				foreach ( $latest_cases as $post ) : setup_postdata( $post );
 				?>
-				<div class="case-list-li">
+				<div class="case-list-li <?php echo ( $i > 3 ) ? 'not-loaded' : '' ;?>">
 					<a href="<?php the_permalink();?>">
 						<div class="case-list-title-overlay">
 							<div style="display: table; height: 100%; width: 100%;">
@@ -44,11 +44,13 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<img class="case-list-still" src="<?php echo get_field('case_stillbild')['url'];?>">
+						<img class="case-list-still" data-src="<?php echo get_field('case_stillbild')['url'];?>">
+						<noscript><img class="case-list-still" src="<?php echo get_field('case_stillbild')['url'];?>"></noscript>
 					</a>
 				</div>
 				<?php wp_reset_postdata(); endforeach; endfor; ?>
 				</div>
+				<span class="js-case-load-more">Visa fler<br><span style="font-size: .688em;">&#9660;</span></span>
 			</div>
 		</section>
 

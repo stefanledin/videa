@@ -165,6 +165,15 @@ header[role="banner"] {
   text-align: center;
   display: block; }
 
+.not-loaded {
+  display: none; }
+
+.js-case-load-more {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-transform: uppercase; }
+
 /**
  * Instagram
  */
@@ -308,11 +317,9 @@ footer[role="contentinfo"] {
   /**
    * Startsida
    */
-  .home header[role="banner"] {
-    margin-bottom: 6.250em; }
-
+  .home header[role="banner"],
   .showreel {
-    margin-bottom: 10%; }
+    margin-bottom: 6.250em; }
 
   .our-areas h2 {
     font-size: 2.125em; }
