@@ -17,5 +17,10 @@
 		$document.scroll();
 	});
 
+	$('#fullscreen').css({
+		width: $window.width(),
+		height: $window.height(),
+		backgroundColor: '#bada55'
+	});
 
 })(window, document, jQuery);

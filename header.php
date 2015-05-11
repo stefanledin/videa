@@ -12,6 +12,10 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class();?>>
+		
+		<?php if ( is_front_page() ) : ?>
+			<div id="fullscreen"></div>
+		<?php endif; ?>
 
 		<header role="banner">
 			<div class="site-width">
