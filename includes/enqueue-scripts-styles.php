@@ -12,6 +12,7 @@ function enqueue_scripts_and_styles () {
 	// wp_enqueue_scripts($handle, $src, $deps, $ver, $in_footer);
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
+	wp_enqueue_script( 'modernizr', $assetsDir.'/js/modernizr.min.js', null, null, true );
 	wp_enqueue_script( 'fitvids', $assetsDir.'/js/jquery.fitvids.js', array('jquery'), null, true );
 	wp_enqueue_script( 'lazyloadxt', $assetsDir.'/js/jquery.lazyloadxt.min.js', array('jquery'), null, true );
 	#wp_enqueue_script( 'lazyloadxt-srcset', $assetsDir.'/js/jquery.lazyloadxt.srcset.min.js', array('lazyloadxt'), null, true );
