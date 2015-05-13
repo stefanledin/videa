@@ -17,10 +17,24 @@
 		$document.scroll();
 	});
 
-	$('#fullscreen').css({
-		width: $window.width(),
-		height: $window.height(),
-		backgroundColor: '#bada55'
-	});
+	var $fullscreen = $('#fullscreen');
+	if ($fullscreen.length) {
+		var fullScreen = function () {
+			$fullscreen.css({
+				width: $window.width(),
+				height: $window.height()
+			});
+		};
+		$window.on('resize orientationchange', function () {
+			fullScreen();
+		});
+		$document.ready(function () {
+			fullScreen();
+			if (!Modernizr.touch) {
+				document.querySelector('#fullscreen video').play();
+			}
+		});
+	}
+
 
 })(window, document, jQuery);

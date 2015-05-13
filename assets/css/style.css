@@ -71,7 +71,8 @@ iframe {
 header[role="banner"] {
   margin-bottom: 2.5%;
   background: #404040;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   header[role="banner"] .videa-logo {
     margin: 0.625em auto;
     display: block;
@@ -102,7 +103,28 @@ header[role="banner"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #bada55; }
+  background: black;
+  overflow: hidden; }
+  #fullscreen .fullscreen-logo {
+    margin-top: 30%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
+  #fullscreen video {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    max-width: none; }
+
+html.touch #fullscreen {
+  background: url("../img/movie-fallback.jpg") center center no-repeat;
+  background-size: cover; }
+  html.touch #fullscreen video {
+    display: none; }
 
 .our-areas h2 {
   font-family: Georgia, serif;

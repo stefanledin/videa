@@ -14,7 +14,17 @@
 	<body <?php body_class();?>>
 		
 		<?php if ( is_front_page() ) : ?>
-			<div id="fullscreen"></div>
+			<div id="fullscreen">
+				<div class="fullscreen-logo">
+					<img src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png">
+				</div>
+				<video loop preload="none">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.mp4" type="video/mp4" media="all and (min-width:481px)">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.ogv" type="video/ogg" media="all and (min-width:481px)">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.webm" type="video/webm" media="all and (min-width:481px)">
+					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/movie-fallback.jpg" alt="Vidéa">
+				</video>
+			</div>
 		<?php endif; ?>
 
 		<header role="banner">
