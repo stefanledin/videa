@@ -17,7 +17,9 @@
 						$srcset .= $image->images->low_resolution->url . ' 306w"';
 						#$srcset .= $image->images->standard_resolution->url . ' 640w"';
 						?>
-						<img <?php echo $srcset;?>>
+						<a href="<?php echo $image->link;?>" target="_blank">
+							<img <?php echo $srcset;?>>
+						</a>
 					</li>
 				<?php endforeach; ?>
 			</ul>
