@@ -17,6 +17,12 @@
 		$document.scroll();
 	});
 
+	$('.fullscreen-continue').on('click touch', function () {
+		$('html, body').animate({
+			scrollTop: $('header[role="banner"]').offset().top
+		});
+	});
+
 	var $fullscreen = $('#fullscreen');
 	if ($fullscreen.length) {
 		var fullScreen = function () {

@@ -12,11 +12,11 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class();?>>
-		
-		<?php if ( is_front_page() ) : ?>
+		<?php if ( is_front_page() && !is_integer(strpos($_SERVER['HTTP_REFERER'], home_url())) ) : ?>
 			<div id="fullscreen">
 				<div class="fullscreen-logo">
 					<img src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png">
+					<img class="fullscreen-continue" src="<?php bloginfo( 'template_directory' );?>/assets/img/arrow-down.png">
 				</div>
 				<video loop preload="none">
 					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.mp4" type="video/mp4" media="all and (min-width:481px)">

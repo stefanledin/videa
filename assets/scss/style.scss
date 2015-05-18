@@ -123,13 +123,18 @@ header[role="banner"] {
 	background: black;
 	overflow: hidden;
 	.fullscreen-logo {
-		margin-top: 30%;
+		margin-top: 60px;
 		left: 50%;
 		position: absolute;
 		z-index: 1;
 		-webkit-transform: translate(-50%);
 		-ms-transform: translate(-50%);
 		transform: translate(-50%);
+	}
+	.fullscreen-continue {
+		margin: 50px auto 0 auto;
+		width: 50%;
+		cursor: pointer;
 	}
 	video {
 		min-width: 100%;
@@ -151,6 +156,10 @@ html.touch #fullscreen {
 		@include serif;
 		color: $text-grey;
 		font-size: 1.8rem;
+		a {
+			text-transform: none;
+			font-size: 1em;
+		}
 	}
 	a {
 		font-size: 0.625em;
