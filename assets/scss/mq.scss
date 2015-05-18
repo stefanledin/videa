@@ -24,7 +24,7 @@
 		margin-left: -1.25%;
 	}
 	.case-list-li {
-		margin: 0 0 1.25% 1.25%;
+		margin: 0 0 0.938em 1.25%;
 		width: 48.75%;
 		float: left;
 	}
@@ -143,8 +143,14 @@
 	/**
 	 * Footer
 	 */
-	.videa-logo-footer {
-		max-width: none;
-	}
+	 footer[role="contentinfo"] {
+	 	padding-top: 4.063em;
+		.videa-logo-footer {
+			max-width: none;
+		}
+		.contact-info {
+			margin-top: 2.125em;
+		}
+	 }
 
 }

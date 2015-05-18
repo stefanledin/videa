@@ -89,10 +89,12 @@ header[role="banner"] {
       header[role="banner"] .menu li:last-child {
         margin-right: 0; }
     header[role="banner"] .menu a {
+      font-family: "Helvetica", sans-serif;
+      font-size: 0.750em;
+      font-weight: 100;
       color: white;
       text-transform: uppercase;
-      text-decoration: none;
-      font-size: 0.750em; }
+      text-decoration: none; }
 
 /**
  * Startsida
@@ -206,6 +208,8 @@ html.touch #fullscreen {
   display: none; }
 
 .js-case-load-more {
+  /*margin-top: 0.938em;*/
+  margin-top: 1.876em;
   cursor: pointer;
   display: block;
   text-align: center;
@@ -247,6 +251,7 @@ footer[role="contentinfo"] {
     text-align: center;
     color: white; }
   footer[role="contentinfo"] a {
+    font-weight: 100;
     color: white; }
 
 .videa-logo-footer {
@@ -292,7 +297,7 @@ footer[role="contentinfo"] {
     margin-left: -1.25%; }
 
   .case-list-li {
-    margin: 0 0 1.25% 1.25%;
+    margin: 0 0 0.938em 1.25%;
     width: 48.75%;
     float: left; }
 
@@ -381,5 +386,9 @@ footer[role="contentinfo"] {
   /**
    * Footer
    */
-  .videa-logo-footer {
-    max-width: none; } }
+  footer[role="contentinfo"] {
+    padding-top: 4.063em; }
+    footer[role="contentinfo"] .videa-logo-footer {
+      max-width: none; }
+    footer[role="contentinfo"] .contact-info {
+      margin-top: 2.125em; } }

@@ -26,7 +26,7 @@ get_header(); ?>
 		<section class="site-width latest-case">
 			<div class="site-width-inner clearfix">
 				<h3 class="section-title">Våra senaste jobb</h3>
-				<div class="case-list-ul">
+				<div class="case-list-ul clearfix">
 				<?php
 				$latest_cases = get_posts( array(
 					'post_type' => 'case'
@@ -50,7 +50,10 @@ get_header(); ?>
 				</div>
 				<?php wp_reset_postdata(); endforeach; endfor; ?>
 				</div>
-				<span class="js-case-load-more">Visa fler<br><span style="font-size: .688em;">&#9660;</span></span>
+				<span class="js-case-load-more">
+					<span style="font-size: 0.750em;">Visa fler</span><br>
+					<span style="font-size: 0.625em;">&#9660;</span>
+				</span>
 			</div>
 		</section>
 
