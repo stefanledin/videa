@@ -10,7 +10,7 @@
 	<section class="site-width grid-660">
 		<div class="site-width-inner">
 			<div class="case-title-group">
-				<h1 class="case-title serif"><?php the_title();?></h1>
+				<h1 class="case-title serif page-title"><?php the_title();?></h1>
 				<span class="case-short-description"><?php the_field('case_kort_beskrivning');?></span>
 			</div>
 			<?php the_field('case_lang_beskrivning'); ?>
