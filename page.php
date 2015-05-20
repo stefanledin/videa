@@ -6,7 +6,7 @@
 			</div>
 		</section>
 		<section class="site-width grid-660">
-			<div class="site-with-inner">
+			<div class="site-width-inner">
 				<article>
 					<h1 class="page-title title serif"><?php the_title();?></h1>
 					<?php the_content(); ?>
