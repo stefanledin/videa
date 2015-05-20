@@ -290,7 +290,6 @@ footer[role="contentinfo"] {
    * Header
    */
   header[role="banner"] {
-    padding: 0 10px;
     height: 3.125em; }
     header[role="banner"] .videa-logo {
       margin: .5em 0 0 0;
@@ -356,7 +355,7 @@ footer[role="contentinfo"] {
     margin-bottom: 2.5em; }
 
   .page-title {
-    margin-bottom: 2.778em; }
+    margin: 2.778em 0 1.375em 0; }
 
   /**
    * Header
