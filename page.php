@@ -8,7 +8,7 @@
 		<section class="site-width grid-660">
 			<div class="site-with-inner">
 				<article>
-					<h1 class="title serif"><?php the_title();?></h1>
+					<h1 class="page-title title serif"><?php the_title();?></h1>
 					<?php the_content(); ?>
 					<a class="home-link" href="<?php echo home_url();?>">« Tillbaka</a>
 				</article>
