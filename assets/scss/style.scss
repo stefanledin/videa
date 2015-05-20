@@ -125,6 +125,16 @@ header[role="banner"] {
 	background: black;
 	overflow: hidden;
 	.fullscreen-logo {
+		img {
+			margin: 0 auto;
+		}
+		/* position: relative;
+		left: 50%;
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		transform: translate(-50%); */
+	}
+	/* .fullscreen-logo {
 		margin-top: 60px;
 		left: 50%;
 		position: absolute;
@@ -132,10 +142,11 @@ header[role="banner"] {
 		-webkit-transform: translate(-50%);
 		-ms-transform: translate(-50%);
 		transform: translate(-50%);
-	}
+	}*/ 
 	.fullscreen-continue {
-		margin: 50px auto 0 auto;
+		/*margin: 50px auto 0 auto;*/
 		width: 50%;
+		max-width: 150px;
 		cursor: pointer;
 	}
 	video {

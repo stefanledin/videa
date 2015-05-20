@@ -106,18 +106,28 @@ header[role="banner"] {
   width: 100%;
   height: 100%;
   background: black;
-  overflow: hidden; }
+  overflow: hidden;
+  /* .fullscreen-logo {
+  	margin-top: 60px;
+  	left: 50%;
+  	position: absolute;
+  	z-index: 1;
+  	-webkit-transform: translate(-50%);
+  	-ms-transform: translate(-50%);
+  	transform: translate(-50%);
+  }*/ }
   #fullscreen .fullscreen-logo {
-    margin-top: 60px;
+    /* position: relative;
     left: 50%;
-    position: absolute;
-    z-index: 1;
     -webkit-transform: translate(-50%);
     -ms-transform: translate(-50%);
-    transform: translate(-50%); }
+    transform: translate(-50%); */ }
+    #fullscreen .fullscreen-logo img {
+      margin: 0 auto; }
   #fullscreen .fullscreen-continue {
-    margin: 50px auto 0 auto;
+    /*margin: 50px auto 0 auto;*/
     width: 50%;
+    max-width: 150px;
     cursor: pointer; }
   #fullscreen video {
     min-width: 100%;

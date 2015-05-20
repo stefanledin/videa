@@ -14,11 +14,13 @@
 	<body <?php body_class();?>>
 		<?php if ( is_front_page() && !is_integer(strpos($_SERVER['HTTP_REFERER'], home_url())) ) : ?>
 			<div id="fullscreen">
-				<div class="fullscreen-logo">
-					<img src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png">
-					<img class="fullscreen-continue" src="<?php bloginfo( 'template_directory' );?>/assets/img/arrow-down.png">
+				<div style="display: table; width: 100%; height: 100%; position: relative; z-index: 1;">
+					<div class="fullscreen-logo" style="display: table-cell; vertical-align: middle; text-align: center;">
+						<img class="fullscreen-logo" src="<?php bloginfo( 'template_directory' );?>/assets/img/logo.png">
+						<img class="fullscreen-continue" src="<?php bloginfo( 'template_directory' );?>/assets/img/arrow-down.png">
+					</div>
 				</div>
-				<video loop preload="none">
+				<video loop preload="none" style="position: absolute; top: 0;">
 					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.mp4" type="video/mp4" media="all and (min-width:481px)">
 					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.ogv" type="video/ogg" media="all and (min-width:481px)">
 					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.webm" type="video/webm" media="all and (min-width:481px)">
