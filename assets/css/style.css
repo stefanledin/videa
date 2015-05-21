@@ -256,12 +256,11 @@ footer[role="contentinfo"] {
   background: #404040;
   overflow: hidden; }
   footer[role="contentinfo"] .contact-info {
-    /*margin-top: 1.875em;*/
     margin-top: .675em;
     text-align: center;
-    color: white; }
+    color: white;
+    font-weight: 100; }
   footer[role="contentinfo"] a {
-    font-weight: 100;
     color: white; }
 
 .videa-logo-footer {
@@ -355,7 +354,7 @@ footer[role="contentinfo"] {
     margin-bottom: 2.5em; }
 
   .page-title {
-    margin: 2.778em 0 1.375em 0; }
+    margin: 2.778em 0 2.750em 0; }
 
   /**
    * Header

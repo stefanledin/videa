@@ -292,13 +292,12 @@ footer[role="contentinfo"] {
 	background: $grey;	
 	overflow: hidden;
 	.contact-info {
-		/*margin-top: 1.875em;*/
 		margin-top: .675em;
 		text-align: center;
 		color: white;
+		font-weight: 100;
 	}
 	a {
-		font-weight: 100;
 		color: white;
 	}
 }
