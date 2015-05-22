@@ -4,9 +4,9 @@
 			<h3 class="section-title"><?php the_title();?></h3>
 			<?php 
 			$instagram = new Instagetter( array(
-				'client_id' => 'e9aa85a9a7ae4063ae3e758a7682fff5'
+				'client_id' => '0f77c011d4404cf7948cfbc6ff51eae8'
 			) );
-			$user_images = $instagram->user('306610749');
+			$user_images = $instagram->user('1673874285');
 			if ( $user_images ) : ?>
 			<ul class="instagram-list">
 				<?php foreach ( $user_images->data as $image ) : ?>
