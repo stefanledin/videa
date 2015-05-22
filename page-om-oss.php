@@ -16,7 +16,8 @@
 				<?php 
 				$employees = get_posts( array(
 					'post_type' => 'medarbetare',
-					'orderby' => 'menu_order'
+					'orderby' => 'menu_order',
+					'posts_per_page' => -1
 				) );
 				foreach ( $employees as $post ) : setup_postdata( $post );
 				?>
