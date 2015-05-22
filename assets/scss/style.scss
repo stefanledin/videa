@@ -80,7 +80,8 @@ iframe {
  * Header
  */
 header[role="banner"] {
-	margin-bottom: 2.5%;
+	/*margin-bottom: 2.5%;*/
+	margin-bottom: 2em;
 	background: $grey;
 	overflow: hidden;
 	position: relative;
@@ -124,6 +125,7 @@ header[role="banner"] {
 	height: 100%;
 	background: black;
 	overflow: hidden;
+	display: none;
 	.fullscreen-logo {
 		img {
 			margin: 0 auto;
@@ -163,6 +165,9 @@ html.touch #fullscreen {
 	video {
 		display: none; 
 	}
+}
+.showreel {
+	margin-bottom: 1.25em;
 }
 .our-areas {
 	h2 {

@@ -69,7 +69,8 @@ iframe {
  * Header
  */
 header[role="banner"] {
-  margin-bottom: 2.5%;
+  /*margin-bottom: 2.5%;*/
+  margin-bottom: 2em;
   background: #404040;
   overflow: hidden;
   position: relative; }
@@ -107,6 +108,7 @@ header[role="banner"] {
   height: 100%;
   background: black;
   overflow: hidden;
+  display: none;
   /* .fullscreen-logo {
   	margin-top: 60px;
   	left: 50%;
@@ -141,6 +143,9 @@ html.touch #fullscreen {
   background-size: cover; }
   html.touch #fullscreen video {
     display: none; }
+
+.showreel {
+  margin-bottom: 1.25em; }
 
 .our-areas h2 {
   font-family: Georgia, serif;
@@ -356,6 +361,11 @@ footer[role="contentinfo"] {
   .page-title {
     margin: 2.778em 0 2.750em 0; }
 
+  #fullscreen {
+    display: block; }
+    #fullscreen img.fullscreen-logo {
+      margin: 0 auto 100px auto; }
+
   /**
    * Header
    */
@@ -370,9 +380,6 @@ footer[role="contentinfo"] {
   /**
    * Startsida
    */
-  #fullscreen .fullscreen-logo {
-    margin-top: 200px; }
-
   .home header[role="banner"],
   .showreel {
     margin-bottom: 6.250em; }

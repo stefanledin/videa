@@ -36,7 +36,7 @@
 		});
 		$document.ready(function () {
 			fullScreen();
-			if (!Modernizr.touch) {
+			if (!Modernizr.touch && ($window.width() > 1000)) {
 				document.querySelector('#fullscreen video').play();
 			}
 		});

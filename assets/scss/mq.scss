@@ -90,6 +90,13 @@
 		margin: 2.778em 0 2.750em 0;
 	}
 
+	#fullscreen {
+		display: block;
+		img.fullscreen-logo {
+			margin: 0 auto 100px auto;
+		}
+	}
+
 	/**
 	 * Header
 	 */
@@ -108,9 +115,7 @@
 	 * Startsida
 	 */
 	#fullscreen {
-		.fullscreen-logo {
-			margin-top: 200px;
-		}
+		
 	}
 	.home header[role="banner"],
 	.showreel {
