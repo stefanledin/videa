@@ -11,14 +11,8 @@
 			<ul class="instagram-list">
 				<?php foreach ( $user_images->data as $image ) : ?>
 					<li class="instagram-list-item">
-						<?php 
-						$srcset = 'srcset="';
-						$srcset .= $image->images->thumbnail->url . ' 150w, ';
-						$srcset .= $image->images->low_resolution->url . ' 306w"';
-						#$srcset .= $image->images->standard_resolution->url . ' 640w"';
-						?>
 						<a href="<?php echo $image->link;?>" target="_blank">
-							<img <?php echo $srcset;?>>
+							<img src="<?php echo $image->images->low_resolution->url;?>">
 						</a>
 					</li>
 				<?php endforeach; ?>
