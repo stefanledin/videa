@@ -1,7 +1,13 @@
-<?php get_header(); ?>
+<?php
+/*
+Template name: Instagram
+ */
+get_header(); ?>
 	<section class="site-width">
 		<div class="site-width-inner clearfix">
-			<h3 class="section-title"><?php the_title();?></h3>
+			<header class="page-title">
+				<h1 class="title serif"><?php the_title();?></h1>
+			</header>
 			<?php 
 			$instagram = new Instagetter( array(
 				'client_id' => '0f77c011d4404cf7948cfbc6ff51eae8'
