@@ -29,9 +29,10 @@ get_header(); ?>
 				<div class="case-list-ul clearfix">
 				<?php
 				$latest_cases = get_posts( array(
-					'post_type' => 'case'
+					'post_type' => 'case',
+					'posts_per_page' => -1
 				) );
-				for ( $i = 0; $i <= 9; $i++ ) :
+				$i = 0;
 				foreach ( $latest_cases as $post ) : setup_postdata( $post );
 				?>
 				<div class="case-list-li <?php echo ( $i > 3 ) ? 'not-loaded' : '' ;?>">
@@ -48,7 +49,7 @@ get_header(); ?>
 						<noscript><img class="case-list-still" src="<?php echo get_field('case_stillbild')['url'];?>"></noscript>
 					</a>
 				</div>
-				<?php wp_reset_postdata(); endforeach; endfor; ?>
+				<?php $i++; wp_reset_postdata(); endforeach; ?>
 				</div>
 				<span class="js-case-load-more">
 					<span style="font-size: 0.750em;">Visa fler</span><br>
