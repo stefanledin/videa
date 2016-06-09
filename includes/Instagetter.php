@@ -12,7 +12,7 @@ class Instagetter
 
     public function user($id)
     {
-    	$data = $this->fetch($this->baseUrl.'users/'.$id.'/media/recent?client_id='.$this->client_id);
+    	$data = $this->fetch($this->baseUrl.'users/'.$id.'/media/recent?client_id='.$this->client_id.'&access_token=1673874285.1677ed0.d851518442a64ec4beaaa59249168639');
     	return $data;
     }
 
