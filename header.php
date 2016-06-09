@@ -21,10 +21,9 @@
 					</div>
 				</div>
 				<video loop preload="none" style="position: absolute; top: 0;">
-					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.mp4" type="video/mp4" media="all and (min-width:481px)">
-					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.ogv" type="video/ogg" media="all and (min-width:481px)">
-					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/ob10_v7.webm" type="video/webm" media="all and (min-width:481px)">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/assets/img/movie-fallback.jpg" alt="Vidéa">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/videa-bg-film.mp4" type="video/mp4" media="all and (min-width:481px)">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/videa-bg-film.ogv" type="video/ogg" media="all and (min-width:481px)">
+					<source src="<?php bloginfo( 'template_directory' ); ?>/assets/videos/videa-bg-film-hd.webm" type="video/webm" media="all and (min-width:481px)">
 				</video>
 			</div>
 		<?php endif; ?>
